@@ -1,13 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!-- Declaração do tipo de documento HTML5 -->
+<html lang="en"> <!-- Início do documento HTML, especificando que o conteúdo está em inglês -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ProjetoIndvidual</title>
-    <script src= "https://cdn.jsdelivr.net/npm/phaser@3.23.0/dist/phaser.js"></script>
-   
+    <meta charset="UTF-8"> <!-- Define o conjunto de caracteres para UTF-8, que inclui a maioria dos caracteres de idiomas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Garante que a página seja responsiva e se ajuste bem em dispositivos móveis -->
+    <title>ProjetoIndvidual</title> <!-- Define o título da página que aparecerá na aba do navegador -->
+    
+    <!-- Carrega a biblioteca Phaser a partir de um CDN externo. Phaser é um framework para jogos em JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.23.0/dist/phaser.js"></script>
 </head>
 <body>
-    <script src= "game.js" type = "module"></script>
+    <!-- Este script carrega o arquivo "game.js" que contém o código do jogo. 
+         O atributo "type = 'module'" indica que o código JavaScript usa módulos ES6 -->
+    <script src="./main/game.js" type="module"></script>
 </body>
 </html>
