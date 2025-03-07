@@ -30,6 +30,13 @@ export default class Cena1 extends Phaser.Scene {
         const playBotao = this.add.image(900, 500, "jogar").setScale(3).setInteractive();
         playBotao.on("pointerdown", () =>{
             jogador.play("jogar");
+            jogador.once("animationcomplete", (anim) => {
+                console.log("Animação completada: " + anim.key);  // Log quando a animação for completada
+                if (anim.key === "jogar") {
+                    console.log("Mudando para Cena2...");
+                    this.scene.start("Cena2");  // Trocar para Cena2
+                }
+            });
         });
     }
 
