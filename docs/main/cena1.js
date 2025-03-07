@@ -39,7 +39,7 @@ export default class Cena1 extends Phaser.Scene {
         jogador.play("padrao"); // Inicia a animação padrão
 
         // Título do jogo
-        this.add.text(500, 100, "nome do jogo", {font: "130px Arial", fill: "##000000"});
+        this.add.text(230, 100, "The Octopus Challenge", {font: "130px Arial", fill: "##000000"});
 
         // Botão "Jogar"
         const playBotao = this.add.image(900, 400, "jogar").setScale(3).setInteractive();
